@@ -5,6 +5,7 @@
       <li v-for="word in  Object.keys(corrections)" :key="word">
       <label :for="word">{{word}}</label>&nbsp;
         <select :id="word" @change="rectify">
+          <option value="">selectionner un mot</option>
           <option v-for="item in corrections[word]" :key="item" :value="item">{{item}}</option>
         </select>
       </li>

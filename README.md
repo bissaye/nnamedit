@@ -1,4 +1,5 @@
 # nnamedit
+This project is an ewondo text editor offering word correction
 
 ## Project setup
 ```

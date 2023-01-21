@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <p>
-        copyright  &copy; <strong>ABESSOLO NYIMI Thérèse Noëllin</strong> 2022
+        copyright  &copy; <strong>ABESSOLO NYIMI Thérèse Noëlline</strong> 2022
     </p>
   </div>
 </template>

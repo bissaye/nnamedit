@@ -69,7 +69,19 @@ export default {
             })
         },
         searchCorrection(word) {
-            return this.$store.state.dico.filter((wordCorrect) => wordCorrect.toLowerCase().includes(word.toLowerCase()))
+            var search = word
+            var results = []
+            while(search.length > 0){
+                console.log(search)
+                results=this.$store.state.dico.filter((wordCorrect) => wordCorrect.toLowerCase().includes(search.toLowerCase()))
+                if (results.length > 0){
+                search = ""
+                }else{
+                search = search.slice(0, -1)
+                }
+              
+            }
+            return results
         },
         removeOccurence(table){
             let temp = [];
